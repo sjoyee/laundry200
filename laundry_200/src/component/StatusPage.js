@@ -17,6 +17,7 @@ import {
   TextField,
   DialogActions,
   Button,
+  DialogContentText,
 } from "@mui/material";
 import washingMachineImg from "../image/washing-machine.png";
 import washingMachineCompImg from "../image/washing-machine-complete.png";
@@ -333,6 +334,9 @@ const StatusPage = () => {
       <Box component="main" sx={{ p: 8 }}>
         <Dialog open={openDialog}>
           <DialogTitle>Start A New Laundry Session</DialogTitle>
+          <DialogContentText textAlign="center">
+            Laundry Machine ID: {machineId}
+          </DialogContentText>
           <DialogContent>
             <Box sx={{ p: 2 }}>
               <InputLabel>Start Time</InputLabel>
